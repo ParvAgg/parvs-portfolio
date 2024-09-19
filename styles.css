@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: whitesmoke;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.gallery img, .projects img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Hamburger Menu CSS */
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.menu-links {
+    display: none;
+}
+
+.menu-links.open {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: block;
+    }
+
+    .menu-links {
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .menu-links li {
+        list-style: none;
+        margin: 10px 0;
+    }
+
+    .menu-links li a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+/* ADDING NEW STYLES */
+
+/* Styling for Download Button */
+.btn-download {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.btn-download:hover {
+    background-color: #555;
+}
+
+/* Timeline Styling */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #333;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.event {
+    padding: 10px 40px;
+    position: relative;
+    background-color: white;
+    border-radius: 6px;
+    width: 45%;
+    left: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #333;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.event span {
+    color: #777;
+    display: block;
+    font-size: 0.9em;
+}
+
+/* Skills Progress Bar Styling */
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress {
+    background-color: #333;
+    height: 10px;
+    border-radius: 10px;
+}
+
+/* Spacing adjustments */
+.timeline .event {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.event h3 {
+    margin-bottom: 5px;
+}
+
+.event p, .event ul {
+    margin-top: 5px;
+    color: #555;
+}
+
+.event ul {
+    margin-left: 20px;
+}
+
+/* Add some padding to sections for better spacing */
+#skills, #resume {
+    padding: 30px 20px;
+}
+
+#skills h2, #resume h2 {
+    margin-bottom: 20px;
+}
+
+/* Update Progress Bar Styling */
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+    height: 12px;
+}
+
+.progress {
+    background-color: #333;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+
+/* Basic styles for layout consistency */
+body {
+    font-family: 'Lato', sans-serif;
+    background: whitesmoke;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Timeline styles for better spacing */
+.timeline {
+    margin: 20px 0;
+}
+
+.event {
+    margin-bottom: 30px;
+}
+
+.event h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.event ul {
+    margin-left: 20px;
+}
+
+/* Skills section with progress bars */
+#skills .skill {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 
+
+
+/* Basic container layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Individual column styling */
+.column {
+    width: 45%; /* Adjust as needed for proper spacing */
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Background for the body with a light financial theme */
+body {
+    font-family: 'Lato', sans-serif;
+    background: url('DALL-E 2024-09-18 17.47.47 - A light, subtle background image.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Projects Section Styling */
+.projects-container {
+    background-color: rgba(255, 255, 255, 0.8); /* White background for contrast with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.project {
+    margin-bottom: 25px;
+}
+
+.project h3 {
+    font-size: 1.6em;
+    color: #333;
+}
+
+.project p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.project a {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Add spacing between sections */
+section {
+    margin: 60px 0; /* 60px top and bottom margin between sections */
+}
+
+/* Add padding below headers */
+h2 {
+    padding-bottom: 20px; /* Space below headers */
+    margin-top: 50px; /* Space above headers */
+}
+
+/* Add padding below sub-headings like h3 */
+h3 {
+    margin-top: 40px; /* Space above sub-headings */
+    margin-bottom: 20px; /* Space below sub-headings */
+}
+
+/* Add padding below the lists for better readability */
+ul {
+    margin-bottom: 40px; /* Space between the end of a list and the next section */
+    padding-left: 20px; /* Add padding to indent list items */
+}
+
+/* Add padding between list items */
+ul li {
+    margin-bottom: 15px; /* Add space between list items */
+}
+
+/* Add spacing to nav elements */
+nav ul {
+    margin-bottom: 40px; /* Space after navigation menu */
+}
+
+/* Add padding to footer */
+footer {
+    margin-top: 50px; /* Space between the last content and the footer */
+    padding: 20px 0; /* Padding inside the footer */
+}
+
+/* Adjust the global body padding to ensure page has some whitespace */
+body {
+    padding: 20px; /* Add padding to the page body */
+}
+
+/* Add border spacing to make sections feel less cluttered */
+section#certifications {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Add spacing between icon and text */
+li i {
+    margin-right: 10px; /* Add space between icons and text */
+}
+
+/* Ensure buttons like "Download Resume" are spaced */
+a.button {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+

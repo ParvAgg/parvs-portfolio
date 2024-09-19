@@ -3,35 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Parv Aggarwal's Projects</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
+        <h1>Parv Aggarwal's Projects</h1>
         <nav>
-            <ul class="nav-links">
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Projects</h1>
-        <div class="projects">
-            <h2>Project 1: Title</h2>
-            <p>Description of Project 1</p>
-            <h2>Project 2: Title</h2>
-            <p>Description of Project 2</p>
-            <h2>Project 3: Title</h2>
-            <p>Description of Project 3</p>
-            <h2>Project 4: Title</h2>
-            <p>Description of Project 4</p>
+
+    <section id="projects">
+        <h2>Academic Projects</h2>
+
+        <!-- Added background container for better contrast -->
+        <div class="projects-container">
+            <div class="project">
+                <h3>Financial Market Analysis using MATLAB</h3>
+                <p>This project utilized the Fama-French-Carhart and 5-Factor Models in MATLAB to perform comprehensive portfolio analysis.</p>
+                <a href="projects/project-financial-market-analysis.html">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Investment Portfolio Optimization</h3>
+                <p>Markowitz Portfolio Optimization using historical data to determine optimal portfolio allocation with minimized variance.</p>
+                <a href="projects/project-portfolio-optimization.html">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>M&A Case Study using Bloomberg Terminal</h3>
+                <p>Financial analysis of the Spotify-Peloton merger, using accretion/dilution models and financial forecasts.</p>
+                <a href="projects/project-ma-case-study.html">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Quantitative Portfolio Management Project</h3>
+                <p>Applied Random Forest and PCA to predict semiconductor stock returns, achieving a 41% return during volatile periods.</p>
+                <a href="projects/project-quantitative-portfolio.html">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Midland Energy Resources - Cost of Capital Analysis (Corporate Finance)</h3>
+                <p>Corporate finance project analyzing and calculating WACC for multiple divisions. Provided recommendations on capital structure, debt capacity, and investment decisions to optimize corporate strategy.</p>
+                <a href="projects/project-midland-energy-analysis.html">View Project</a>
+            </div>
         </div>
-    </main>
+    </section>
+
     <footer>
         <p>&copy; 2024 Parv Aggarwal</p>
     </footer>
+
 </body>
 </html>
